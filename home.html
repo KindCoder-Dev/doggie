@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220412172536">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220412182828">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,7 +72,7 @@
 								<button type="submit" class="header__button-search _icon-search"></button>
 							</form>
 						</div>
-						<button type="submit" class="header__shop _icon-shopping"><span class="header__shop-num">2</span></button>
+						<button data-popup="#basket" type="submit" class="header__shop _icon-shopping"><span class="header__shop-num">2</span></button>
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
 
 					</div>
@@ -215,7 +215,25 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220412172536"></script>
+	<div id="basket" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<h2 class="popup__title _icon-shopping"></h2>
+					<button data-close type="button" class="popup__close"></button>
+				</div>
+				<div class="popup__text basket">
+					<p class="basket__text">Cart is empty</p>
+					<div class="basket__buttons">
+						<button type="submit" class="button">Buy</button>
+						<button type="submit" class="button">Clear</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20220412182828"></script>
 </body>
 
 </html>
