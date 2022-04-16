@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220412234037">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220416132855">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,11 +40,13 @@
 										<a href="#" class="menu__link">Services</a>
 										<span class="menu__arrow arrow _icon-select-arrow"></span>
 									</div>
-									<ul class="menu__sub sub-menu__list">
-										<li class="sub-menu__item"><a href="#" class="sub-menu__link">Reviews</a></li>
-										<li class="sub-menu__item"><a href="#" class="sub-menu__link">Specials</a></li>
-										<li class="sub-menu__item"><a href="#" class="sub-menu__link">About</a></li>
-									</ul>
+									<div class="sub-menu">
+										<ul class="menu__sub sub-menu__list">
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">Reviews</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">Specials</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">About</a></li>
+										</ul>
+									</div>
 								</li>
 								<li class="menu__items"><a href="#" class="menu__link">Specials</a></li>
 								<li class="menu__items"><a href="#" class="menu__link">Facilities</a></li>
@@ -54,13 +56,14 @@
 										<a href="#" class="menu__link">Shop</a>
 										<span class="menu__arrow arrow _icon-select-arrow"></span>
 									</div>
-									<ul class="menu__sub sub-menu__list">
-										<li class="sub-menu__item"><a href="#" class="sub-menu__link">Reviews</a></li>
-										<li class="sub-menu__item"><a href="#" class="sub-menu__link">About</a></li>
-									</ul>
+									<div class="sub-menu">
+										<ul class="menu__sub sub-menu__list">
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">Reviews</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">About</a></li>
+										</ul>
+									</div>
 								</li>
 								<li class="menu__items"><a href="#" class="menu__link">About</a></li>
-
 							</ul>
 						</nav>
 					</div>
@@ -71,7 +74,7 @@
 								<button type="submit" class="header__button-search _icon-search"></button>
 							</form>
 						</div>
-						<button data-popup="#basket" type="submit" class="header__shop _icon-shopping"><span class="header__shop-num">2</span></button>
+						<button data-popup="#basket" type="submit" class="header__shop _icon-shopping"><span>2</span></button>
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
 
 					</div>
@@ -196,6 +199,40 @@
 					<a href="#" class="services__button button">Learn More</a>
 				</div>
 			</section>
+			<section class="page__form appointment">
+				<div class="appointment__container">
+					<div class="appointment__form">
+						<form action="" class="form-appointment">
+							<div class="form-appointment__body">
+								<h2 class="form-appointment__title">Make an appointment</h2>
+								<div class="form-appointment__inputs">
+									<div class="form-appointment__item">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Name" class="form-appointment__input">
+									</div>
+									<div class="form-appointment__item">
+										<input autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Email" class="form-appointment__input">
+									</div>
+									<div class="form-appointment__item">
+										<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Phone Number" class="form-appointment__input">
+									</div>
+									<div class="form-appointment__item">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Select Service" class="form-appointment__input">
+									</div>
+									<div class="form-appointment__item">
+										<textarea autocomplete="off" name="form[]" placeholder="Tell us about your puppers include his/her name" data-error="Ошибка" class="form-appointment__input form-appointment__input_area"></textarea>
+									</div>
+								</div>
+								<button type="submit" class="form-appointment__button button">Make an Appointment</button>
+							</div>
+						</form>
+					</div>
+					<div class="appointment__content content-appointment">
+						<h2 class="content-appointment__title">Maxime placeat facere possimus omnis </h2>
+						<div class="content-appointment__sum">5,700+</div>
+						<div class="content-appointment__bottom">customers served</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -232,7 +269,7 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20220412234037"></script>
+	<script src="js/app.min.js?_v=20220416132855"></script>
 </body>
 
 </html>
